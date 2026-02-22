@@ -518,6 +518,72 @@
   color: var(--text-secondary);
 }
 
+/* === Tournament Schedule === */
+.tournament-schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border: 1px solid var(--dark-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.tournament-row {
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  background: var(--dark-card);
+  border-bottom: 1px solid var(--dark-border);
+  transition: background 0.2s;
+}
+
+.tournament-row:last-child {
+  border-bottom: none;
+}
+
+.tournament-row:hover {
+  background: rgba(91, 164, 217, 0.05);
+}
+
+.tournament-date {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--columbia-blue);
+  letter-spacing: 1px;
+}
+
+.tournament-location {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.tournament-links {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.tournament-link {
+  display: inline-block;
+  background: var(--columbia-blue);
+  color: var(--white) !important;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  transition: background 0.2s;
+}
+
+.tournament-link:hover {
+  background: var(--columbia-blue-light);
+  color: var(--navy-dark) !important;
+}
+
 /* ============================================
    TEAMS PAGE
    ============================================ */
@@ -954,6 +1020,15 @@
 
   .footer-container {
     grid-template-columns: 1fr;
+  }
+
+  .tournament-row {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .tournament-links {
+    justify-content: flex-start;
   }
 }
 
