@@ -105,7 +105,7 @@ function Schedule() {
       </section>
 
       <section className="section">
-        <h2 className="section-title">2026 Cougs Baseball Tournament Schedule</h2>
+        <h2 className="section-title section-title-center">2026 Cougs Baseball Tournament Schedule</h2>
         <div className="tournament-schedule">
           {tournamentSchedule.map((event, index) => (
             <div key={index} className="tournament-row">
