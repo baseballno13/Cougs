@@ -1,15 +1,24 @@
 import { NavLink } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    function handleScroll() {
+      setScrolled(window.scrollY > 50)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-container">
         <NavLink to="/" className="navbar-logo">
           <span className="logo-icon">CB</span>
-          <span className="logo-text">COUGS BASEBALL</span>
+          <span className="logo-text">COUGS</span>
         </NavLink>
 
         <button
@@ -29,11 +38,6 @@ function Navbar() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/schedule" onClick={() => setMenuOpen(false)}>
-              Schedule
-            </NavLink>
-          </li>
-          <li>
             <NavLink to="/teams" onClick={() => setMenuOpen(false)}>
               Teams
             </NavLink>
@@ -44,8 +48,18 @@ function Navbar() {
             </NavLink>
           </li>
           <li>
+            <NavLink to="/schedule" onClick={() => setMenuOpen(false)}>
+              Schedule
+            </NavLink>
+          </li>
+          <li>
             <NavLink to="/join" onClick={() => setMenuOpen(false)}>
-              Join Cougs
+              Contact Us
+            </NavLink>
+          </li>
+          <li className="nav-cta-item">
+            <NavLink to="/join" onClick={() => setMenuOpen(false)}>
+              Spring 2026 Tryouts
             </NavLink>
           </li>
         </ul>
