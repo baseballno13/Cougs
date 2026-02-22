@@ -39,7 +39,7 @@ function Navbar() {
           </li>
           <li>
             <NavLink to="/teams" onClick={() => setMenuOpen(false)}>
-              Teams
+              Team
             </NavLink>
           </li>
           <li>
@@ -50,16 +50,6 @@ function Navbar() {
           <li>
             <NavLink to="/schedule" onClick={() => setMenuOpen(false)}>
               Schedule
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/join" onClick={() => setMenuOpen(false)}>
-              Contact Us
-            </NavLink>
-          </li>
-          <li className="nav-cta-item">
-            <NavLink to="/join" onClick={() => setMenuOpen(false)}>
-              Spring 2026 Tryouts
             </NavLink>
           </li>
         </ul>
