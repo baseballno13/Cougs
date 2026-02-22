@@ -2,6 +2,13 @@ import { useEffect } from 'react'
 
 const tournamentSchedule = [
   {
+    date: '2/21',
+    location: 'Waco',
+    links: [
+      { label: 'Bracket', url: 'https://play.fivetoolyouth.org/events/lt-winter-warm-up-pap-riverbend-park-waco-02-21-2026/10u-d3-' },
+    ],
+  },
+  {
     date: '2/28',
     location: 'Clifton',
     links: [
