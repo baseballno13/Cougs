@@ -54,7 +54,6 @@ function Home() {
           <h1>COUGS</h1>
           <p className="hero-subtitle">Baseball</p>
           <div className="hero-cta">
-            <Link to="/join" className="btn btn-primary">Join the Cougs</Link>
             <Link to="/schedule" className="btn btn-secondary">View Schedule</Link>
           </div>
         </div>
