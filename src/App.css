@@ -11,7 +11,7 @@
 
 /* === Navbar === */
 .navbar {
-  background: var(--crimson);
+  background: var(--navy);
   padding: 0 1.5rem;
   position: sticky;
   top: 0;
@@ -39,12 +39,12 @@
 }
 
 .navbar-logo:hover {
-  color: var(--white);
+  color: var(--columbia-blue);
 }
 
 .logo-icon {
-  background: var(--white);
-  color: var(--crimson);
+  background: var(--columbia-blue);
+  color: var(--navy);
   width: 38px;
   height: 38px;
   border-radius: 50%;
@@ -74,8 +74,8 @@
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--white);
-  border-bottom-color: var(--white);
+  color: var(--columbia-blue);
+  border-bottom-color: var(--columbia-blue);
 }
 
 .menu-toggle {
@@ -115,7 +115,7 @@
 }
 
 .page-header {
-  background: linear-gradient(135deg, var(--crimson) 0%, var(--crimson-dark) 100%);
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
   color: var(--white);
   text-align: center;
   padding: 3rem 1.5rem;
@@ -152,13 +152,13 @@
   left: 0;
   width: 50px;
   height: 3px;
-  background: var(--crimson);
+  background: var(--columbia-blue-dark);
   border-radius: 2px;
 }
 
 /* === Hero === */
 .hero {
-  background: linear-gradient(135deg, var(--crimson) 0%, var(--gray-dark) 100%);
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
   color: var(--white);
   min-height: 500px;
   display: flex;
@@ -248,12 +248,12 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: var(--crimson);
+  background: var(--columbia-blue-dark);
 }
 
 .card h3 {
   font-size: 1.8rem;
-  color: var(--crimson);
+  color: var(--navy);
   margin-bottom: 0.5rem;
 }
 
@@ -293,7 +293,7 @@
 .game-date .month {
   font-size: 0.75rem;
   font-weight: 700;
-  color: var(--crimson);
+  color: var(--columbia-blue-dark);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -322,7 +322,7 @@
 
 .game-time {
   font-weight: 600;
-  color: var(--crimson);
+  color: var(--navy);
   font-size: 0.95rem;
   white-space: nowrap;
 }
@@ -349,7 +349,7 @@
 
 .news-tag {
   display: inline-block;
-  background: var(--crimson);
+  background: var(--navy);
   color: var(--white);
   font-size: 0.75rem;
   font-weight: 700;
@@ -376,13 +376,21 @@
   color: var(--gray-medium);
 }
 
+/* === GameChanger Widget === */
+.gc-widget-wrapper {
+  background: var(--white);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
 /* === Scores Page === */
 .record-banner {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 3rem;
-  background: linear-gradient(135deg, var(--crimson) 0%, var(--crimson-dark) 100%);
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
   color: var(--white);
   padding: 2rem;
   border-radius: var(--radius-lg);
@@ -435,12 +443,12 @@
 }
 
 .tab:hover {
-  color: var(--crimson);
+  color: var(--navy);
 }
 
 .tab.active {
-  color: var(--crimson);
-  border-bottom-color: var(--crimson);
+  color: var(--navy);
+  border-bottom-color: var(--columbia-blue-dark);
 }
 
 .scores-list {
@@ -512,7 +520,7 @@
 
 .score-cougs {
   font-weight: 700;
-  color: var(--crimson);
+  color: var(--navy);
 }
 
 .score-vs {
@@ -533,7 +541,7 @@
 }
 
 .score-winner {
-  color: var(--crimson);
+  color: var(--navy);
 }
 
 .score-dash {
@@ -544,7 +552,7 @@
 .score-time {
   font-size: 1.2rem;
   font-weight: 700;
-  color: var(--crimson);
+  color: var(--navy);
 }
 
 .score-meta {
@@ -576,8 +584,8 @@
 }
 
 .stat-card.highlight {
-  background: var(--crimson);
-  color: var(--white);
+  background: var(--navy);
+  color: var(--columbia-blue);
 }
 
 .stat-value {
@@ -638,7 +646,7 @@
 }
 
 .cougs-bar {
-  background: var(--crimson);
+  background: var(--navy);
 }
 
 .opp-bar {
@@ -665,8 +673,8 @@
 }
 
 .players-table thead {
-  background: var(--crimson);
-  color: var(--white);
+  background: var(--navy);
+  color: var(--columbia-blue);
 }
 
 .players-table th {
@@ -749,8 +757,8 @@
 }
 
 .poll-option:not(.poll-voted):hover {
-  border-color: var(--crimson);
-  background: rgba(152, 30, 50, 0.05);
+  border-color: var(--navy);
+  background: rgba(10, 31, 68, 0.05);
 }
 
 .poll-option-label {
@@ -767,7 +775,7 @@
 
 .poll-bar {
   height: 10px;
-  background: var(--crimson);
+  background: var(--columbia-blue-dark);
   border-radius: 5px;
   transition: width 0.5s ease;
 }
@@ -775,7 +783,7 @@
 .poll-pct {
   font-weight: 700;
   font-size: 0.9rem;
-  color: var(--crimson);
+  color: var(--navy);
   min-width: 40px;
 }
 
@@ -807,7 +815,7 @@
 
 .gallery-placeholder {
   height: 180px;
-  background: linear-gradient(135deg, var(--crimson) 0%, var(--gray-dark) 100%);
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -829,7 +837,7 @@
 
 .gallery-author {
   font-size: 0.85rem;
-  color: var(--crimson);
+  color: var(--columbia-blue-dark);
 }
 
 .chants-list {
@@ -880,7 +888,7 @@
 }
 
 .merch-banner {
-  background: linear-gradient(135deg, var(--crimson) 0%, var(--crimson-dark) 100%);
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
   border-radius: var(--radius-lg);
   margin: 0 1.5rem 3rem;
   max-width: calc(var(--max-width) - 3rem);
@@ -905,7 +913,7 @@
 
 /* === Footer === */
 .footer {
-  background: var(--gray-dark);
+  background: var(--navy-dark);
   color: rgba(255,255,255,0.85);
   margin-top: auto;
 }
@@ -989,7 +997,7 @@
     top: 64px;
     left: 0;
     right: 0;
-    background: var(--crimson-dark);
+    background: var(--navy-dark);
     flex-direction: column;
     padding: 1.5rem;
     gap: 0;
