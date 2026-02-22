@@ -8,8 +8,8 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <NavLink to="/" className="navbar-logo">
-          <span className="logo-icon">C</span>
-          <span className="logo-text">COUGS</span>
+          <span className="logo-icon">CB</span>
+          <span className="logo-text">COUGS BASEBALL</span>
         </NavLink>
 
         <button
@@ -29,18 +29,23 @@ function Navbar() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/scores" onClick={() => setMenuOpen(false)}>
-              Scores
+            <NavLink to="/schedule" onClick={() => setMenuOpen(false)}>
+              Schedule
             </NavLink>
           </li>
           <li>
-            <NavLink to="/stats" onClick={() => setMenuOpen(false)}>
-              Stats
+            <NavLink to="/teams" onClick={() => setMenuOpen(false)}>
+              Teams
             </NavLink>
           </li>
           <li>
-            <NavLink to="/fans" onClick={() => setMenuOpen(false)}>
-              Fans
+            <NavLink to="/staff" onClick={() => setMenuOpen(false)}>
+              Staff
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/join" onClick={() => setMenuOpen(false)}>
+              Join Cougs
             </NavLink>
           </li>
         </ul>

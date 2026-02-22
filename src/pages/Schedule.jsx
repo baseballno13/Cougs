@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-function Scores() {
+function Schedule() {
   useEffect(() => {
     if (window.GC && window.GC.team && window.GC.team.schedule) {
       window.GC.team.schedule.init({
@@ -12,14 +12,16 @@ function Scores() {
   }, [])
 
   return (
-    <div className="page scores-page">
+    <div className="page schedule-page">
       <section className="page-header">
-        <h1>Scores & Schedule</h1>
-        <p>Track the Cougs all season long</p>
+        <h1>Schedule</h1>
+        <p>Follow the Cougs all season long</p>
       </section>
 
       <section className="section">
-        <h2 className="section-title">Schedule</h2>
+        <p className="schedule-intro">
+          View our upcoming games, scores, and full season schedule powered by GameChanger.
+        </p>
         <div className="gc-widget-wrapper">
           <div id="gc-schedule-widget-ll2g"></div>
         </div>
@@ -28,4 +30,4 @@ function Scores() {
   )
 }
 
-export default Scores
+export default Schedule

@@ -6,32 +6,32 @@
 }
 
 :root {
-  /* Cougs Navy & Columbia Blue Theme */
+  /* Cougs Baseball — Navy, Columbia Blue & White */
   --navy: #0a1f44;
   --navy-dark: #061330;
-  --navy-light: #1a3a6b;
+  --navy-light: #132d5e;
   --columbia-blue: #9bddff;
   --columbia-blue-dark: #6bc4f0;
-  --gray-dark: #1a1a2e;
-  --gray-medium: #4a4a5a;
-  --gray-light: #e0e8f0;
-  --gray-lighter: #f0f4f8;
+  --columbia-blue-muted: rgba(155, 221, 255, 0.15);
+  --dark-bg: #0b0f1a;
+  --dark-surface: #111827;
+  --dark-card: #1a2236;
+  --dark-border: rgba(155, 221, 255, 0.1);
+  --text-primary: #f0f4f8;
+  --text-secondary: rgba(240, 244, 248, 0.7);
+  --text-muted: rgba(240, 244, 248, 0.45);
   --white: #ffffff;
-  --gold: #c69214;
-  --green-win: #2d8a4e;
-  --red-loss: #c0392b;
-
-  /* Legacy aliases for easy migration */
-  --crimson: var(--navy);
-  --crimson-dark: var(--navy-dark);
-  --crimson-light: var(--navy-light);
+  --green-win: #34d399;
+  --red-loss: #f87171;
+  --gold: #fbbf24;
 
   --font-primary: 'Segoe UI', system-ui, -apple-system, sans-serif;
   --font-heading: 'Segoe UI', system-ui, -apple-system, sans-serif;
 
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
-  --shadow-md: 0 4px 12px rgba(0,0,0,0.12);
-  --shadow-lg: 0 8px 24px rgba(0,0,0,0.16);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.4);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.5);
+  --shadow-glow: 0 0 20px rgba(155, 221, 255, 0.15);
 
   --radius-sm: 6px;
   --radius-md: 10px;
@@ -46,8 +46,8 @@ html {
 
 body {
   font-family: var(--font-primary);
-  color: var(--gray-dark);
-  background-color: var(--gray-lighter);
+  color: var(--text-primary);
+  background-color: var(--dark-bg);
   line-height: 1.6;
   min-height: 100vh;
   margin: 0;
@@ -62,13 +62,13 @@ body {
 }
 
 a {
-  color: var(--navy);
+  color: var(--columbia-blue);
   text-decoration: none;
   transition: color 0.2s;
 }
 
 a:hover {
-  color: var(--navy-light);
+  color: var(--columbia-blue-dark);
 }
 
 img {
@@ -85,35 +85,38 @@ h1, h2, h3, h4 {
 /* === Utility === */
 .btn {
   display: inline-block;
-  padding: 12px 28px;
+  padding: 14px 32px;
   border-radius: var(--radius-sm);
-  font-weight: 600;
-  font-size: 1rem;
+  font-weight: 700;
+  font-size: 0.95rem;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.25s;
   border: 2px solid transparent;
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .btn-primary {
-  background: var(--navy);
-  color: var(--columbia-blue);
-  border-color: var(--navy);
+  background: var(--columbia-blue);
+  color: var(--navy-dark);
+  border-color: var(--columbia-blue);
 }
 
 .btn-primary:hover {
-  background: var(--navy-light);
-  border-color: var(--navy-light);
-  color: var(--white);
+  background: var(--white);
+  border-color: var(--white);
+  color: var(--navy-dark);
+  box-shadow: var(--shadow-glow);
 }
 
 .btn-secondary {
   background: transparent;
-  color: var(--white);
-  border-color: var(--white);
+  color: var(--columbia-blue);
+  border-color: var(--columbia-blue);
 }
 
 .btn-secondary:hover {
-  background: var(--white);
-  color: var(--navy);
+  background: var(--columbia-blue);
+  color: var(--navy-dark);
 }
