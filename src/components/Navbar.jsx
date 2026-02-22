@@ -52,6 +52,11 @@ function Navbar() {
               Schedule
             </NavLink>
           </li>
+          <li>
+            <NavLink to="/history" onClick={() => setMenuOpen(false)}>
+              History
+            </NavLink>
+          </li>
           <li className="nav-cta-item">
             <NavLink to="/login" onClick={() => setMenuOpen(false)}>
               Log In
