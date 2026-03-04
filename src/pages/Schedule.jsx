@@ -16,13 +16,6 @@ const tournamentSchedule = [
     ],
   },
   {
-    date: '3/7',
-    location: 'Tyler',
-    links: [
-      { label: 'Bracket', url: 'https://www.usssa.com/baseball/event_gameCenter/?eventID=411352&age=9&ageClass=AA&option=001&divisionID=2712764&bnp=0&bf=0&isWinner=1' },
-    ],
-  },
-  {
     date: '3/28',
     location: 'Parsons Ranch',
     links: [
